@@ -1,0 +1,18 @@
+{
+  "name": "cpsc349-exercise4",
+  "version": "1.0.0",
+  "description": "Install and configure PocketBase to act as a backend and esbuild to compile JSX for the use of React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Jayjojo24/cpsc349-exercise4"
+  },
+  "author": "Jose Gutierrez",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.15.18"
+  }
+}
