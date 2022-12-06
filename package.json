@@ -4,7 +4,12 @@
   "description": "Install and configure PocketBase to act as a backend and esbuild to compile JSX for the use of React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild app.jsx --bundle --outfile=out.js",
+    "pocketbase": "./pocketbase serve",
+    "esbuild": "esbuild src/app.jsx --outfile=pb_public/app.js --watch",
+    "browsersync": "browser-sync http://localhost:8090 --files 'pb_public/**/*'",
+    "start": "npm-run-all --parallel esbuild pocketbase browsersync"
   },
   "repository": {
     "type": "git",
@@ -13,6 +18,11 @@
   "author": "Jose Gutierrez",
   "license": "ISC",
   "dependencies": {
-    "esbuild": "^0.15.18"
+    "esbuild": "^0.15.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
