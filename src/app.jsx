@@ -1,8 +1,5 @@
-import * as React from 'react'
-import * as Server from 'react-dom/server'
-
-const USERNAME = 'ADMIN_EMAIL'
-const PASSWORD = 'ADMIN_PASSWORD'
+const USERNAME = 'j.gutierrez3@csu.fullerton.edu'
+const PASSWORD = '0123456789'
 
 const pb = new PocketBase('http://127.0.0.1:8090')
 
